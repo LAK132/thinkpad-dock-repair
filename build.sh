@@ -1,6 +1,11 @@
 #! /bin/sh
 mkdir -p build
+
+# alternatively use `pandoc --self-contained` to have everything embedded
+# directly in the html output
 cp -r images build/
+cp style.css build/
+
 pandoc \
   --from=latex \
   --to=html \
