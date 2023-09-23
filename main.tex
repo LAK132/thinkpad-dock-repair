@@ -8,6 +8,39 @@ Hello, World!
 
 \cite{LAK132}
 
+\begin{lstlisting}[language=cpp]
+	int main() {
+		return EXIT_FAILURE;
+	}
+\end{lstlisting}
+
+\begin{lstlisting}[label={fig:cpp}, caption={A C++ snippet.}, language=cpp]
+	int main() {
+		return EXIT_FAILURE;
+	}
+\end{lstlisting}
+Figure \ref{fig:cpp} shows a C++ code snippet.
+
+\begin{lstlisting}[label={fig:graph}, caption={A dot graph.}, language=dot-image]
+	digraph G {
+		main -> parse -> execute;
+		main -> init;
+		main -> cleanup;
+		execute -> make_string;
+		execute -> printf;
+		init -> make_string;
+		main -> printf;
+	}
+\end{lstlisting}
+Figure \ref{fig:graph} shows dot digraph.
+
+\begin{figure}
+	\caption{The sky}
+	\label{fig:sky}
+	\includegraphics[width=10cm]{images/IMG_2479.JPG}
+\end{figure}
+Figure \ref{fig:sky} shows the evening sky in the Northern Territory, Australia.
+
 \newpage
 
 \bibliography{bibliography}
