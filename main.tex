@@ -1,57 +1,55 @@
 \documentclass{article}
 
-\title{Meow}
+\title{Repairing a Lenovo ThinkPad Series 3 Mini Dock Plus (4337) with Hot Glue}
 \author{LAK132}
 
 \begin{document}
 
 \maketitle
-\tableofcontents
 
-\section[content]{Content}
+A ThinkPad dock I bought for my X220 arrived in less than stellar condition.
+For whatever reason, when I placed the X220 on top of it,
+it would not latch on.
+I decided to open it up, and discovered that part of the mechanism that allows
+the spring loaded top plate to lower and also reset the latches after the
+laptop has been released, was damaged:
 
-Hello, World!
+\includegraphics[width=19em]{images/IMG_6034.JPG}
+\includegraphics[width=19em]{images/IMG_6036.JPG}
+\includegraphics[width=19em]{images/IMG_6037.JPG}
 
-\cite{LAK132}
-
-\begin{lstlisting}[language=cpp]
-	int main() {
-		return EXIT_FAILURE;
-	}
-\end{lstlisting}
-
-\begin{lstlisting}[label={fig:cpp}, caption={A C++ snippet.}, language=cpp]
-	int main() {
-		return EXIT_FAILURE;
-	}
-\end{lstlisting}
-Figure \ref{fig:cpp} shows a C++ code snippet.
-
-\begin{lstlisting}[label={fig:graph}, caption={A dot graph.}, language=dot-image]
-	digraph G {
-		main -> parse -> execute;
-		main -> init;
-		main -> cleanup;
-		execute -> make_string;
-		execute -> printf;
-		init -> make_string;
-		main -> printf;
-	}
-\end{lstlisting}
-Figure \ref{fig:graph} shows dot digraph.
+As far as I can tell, this part was probably never going to last long,
+given how much force it was under and the fact it was made from soft plastic.
+At this point I had 2 options, I either repair the broken part,
+or try and bypass the mechanism all together.
+My initial attempt to repair the part didn't end well,
+the super glue I used didn't want to stick to the plastic.
+However, it turns out that this mechanism can be safely removed all together,
+so long as the latch release mechanism is jammed:
 
 \begin{figure}
-	\caption{The sky}
-	\label{fig:sky}
-	\includegraphics[width=10cm]{images/IMG_2479.JPG}
+	\caption{}
+	\includegraphics[width=55em]{images/IMG_6041.JPG}
 \end{figure}
-Figure \ref{fig:sky} shows the evening sky in the Northern Territory, Australia.
 
-\newpage
+\begin{figure}
+	\caption{Top plate with latch reset/lowering mechanism removed}
+	\includegraphics[width=55em]{images/IMG_6044.JPG}
+\end{figure}
 
-\section[references]{References}
+\begin{figure}
+	\caption{Latch reset mechanism jammed with hot glue}
+	\includegraphics[width=55em]{images/IMG_6047.JPG}
+\end{figure}
 
-\bibliography{bibliography}
-\bibliographystyle{ieeetr}
+With it reassembled with the top plate mechanism removed and the latch reset
+mechanism jammed with hot glue, the top plate will now lower all the way:
+
+\begin{figure}
+	\caption{}
+	\includegraphics[width=55em]{images/IMG_6049.JPG}
+\end{figure}
+
+And the X220 will happily latch on!
 
 \end{document}
