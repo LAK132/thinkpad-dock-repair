@@ -12,6 +12,10 @@ table, th, td {
   border: 1px solid;
 }
 
+img {
+  max-width: 100%;
+}
+
 p {
   text-indent: 1em;
 }
